@@ -8,39 +8,26 @@
     <title>RateFix Game</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style type="text/css"> .container{padding: 48px; justify-content: center;}</style>
+    <style type="text/css"> .container{padding: 48px;}</style>
   </head>
   <body>
-    <div class="container" style="max-width: 600px;">
-      <div class="row text-center">
+    <div class="container " style="max-width: 600px;">
+      <div class="row justify-content-center">
         <h1>RateFix</h1>
         <h3>Competitive Game for 2+ People or Teams</h3>
       </div>
-      <div class="row text-center" style="padding-top:24px;">
-        <div class="col-xs-12 quote">
-          Quote appears here
+      <div class="row justify-content-center" style="padding-top:24px;">
+        <div class="col-xs-12" id="category">
+          Category appears here
         </div>
+        <button type="button" id="categoryButton" class="btn btn-dark btn-block">Category</button>
       </div>
 
-      <div class="row no-gutters" style="padding-top:24px;">
-        <div class="col-sm">
-          <a id="tweet" target="_blank" href="https://twitter.com/intent/tweet">
-            <button type="button" id="tweetButton" class="btn btn-primary">tweet</button>
-          </a>
-        </div>      
-      
-        <div class="col-sm">
-          <button type="button" id="localQuote" class="btn btn-dark">Local Quote</button>          
+      <div class="row justify-content-center" style="padding-top: 32px;">
+        <div>
+          <h1 id="letter">Letter</h1>
         </div>
-
-        <div class="col-sm">
-          <button type="button" id="randomQuote" class="btn btn-dark">Random Quote</button>
-        </div>
-
-        <div class="col-sm">
-          <button type="button" id="simpsonsQuote" class="btn btn-dark">Simpsons Quote</button>
-        </div>
-
+        <button type="button" id="letterButton" class="btn btn-dark btn-block">Begins with</button>       
       </div>
       
     </div>
