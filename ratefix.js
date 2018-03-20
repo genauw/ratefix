@@ -14,15 +14,30 @@ function shuffle(array){
   }
   return array;
 }
-//console.log(shuffle(categoryArr));
+
+var shuffledArray = shuffle(categoryArr);
+
+function getRandomCategory(){
+  if (shuffledArray.length < 1){
+    return "Game Over";
+  }else{
+    return shuffledArray.pop();
+  }
+}
+
+//funtion return a random number between 65-90 for html unicode between A-Z
+function getRandomLetter() {
+    return String.fromCharCode(Math.floor(Math.random() * (90 - 65 + 1)) + 65);
+}
 
 $(document).ready(function(){
     $("#categoryButton").click(function(){
-        console.log("category button click");
-        //$("#category").html("Click worked");
+      $("#category").html(getRandomCategory());
     });
     $("#letterButton").click(function(){
-        console.log("letter button click");
-        //$("#letter").html("A example");
+      $("#letter").html(getRandomLetter());
     });
 });
+
+//add how to
+//add new Game
